@@ -12,7 +12,7 @@
 # First 8 characters of SHA
 export COMMIT=${CIRCLE_SHA1:0:8}
 # Docker Hub Repo
-export REPO=atlassian/nucleus
+export REPO=itsananderson/nucleus
 # Target tag, latest on master, branch otherwise
 export TAG=`if [ "$CIRCLE_BRANCH" == "master" ]; then echo "latest"; else echo $CIRCLE_BRANCH ; fi`
 
